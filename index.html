@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CA Program — Techfest IIT Bombay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="veil" id="veil"><span>BOOTING SYSTEM...</span></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<canvas id="particles"></canvas>
+<div class="grid-bg"></div>
+<div class="noise"></div>
+<div class="scanlines"></div>
+<div class="float-layer" id="floatLayer"></div>
+
+<header>
+  <div class="logo"><span class="dot"></span> TECHFEST × CA//PROTOCOL</div>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#perks">Perks</a></li>
+      <li><a href="#path">Selection</a></li>
+      <li><a href="#ranks">Ranks</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+  <button class="nav-cta">Apply Now</button>
+</header>
+
+<section class="hero">
+  <div>
+    <div class="eyebrow">IIT Bombay // Asia's Largest Sci-Tech Fest</div>
+    <h1>Become the <span class="accent">Interface</span><br>Between Your Campus <span class="solid-mag">&amp; the Future</span></h1>
+    <p class="sub">The Campus Ambassador Program plugs you directly into Techfest's core network — recruit, lead, and unlock rewards, internships, and a permanent line on your resume that reads <em>"built different."</em></p>
+    <div class="hero-cta-row">
+      <button class="btn-primary">Initialize Application →</button>
+      <button class="btn-ghost">View Protocol</button>
+    </div>
+    <div class="stat-row">
+      <div class="stat"><b>1400+</b><span>Colleges Connected</span></div>
+      <div class="stat"><b>₹2Cr+</b><span>Prize Pool Unlocked</span></div>
+      <div class="stat"><b>25</b><span>Countries Reached</span></div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="visor-wrap">
+      <div class="ring"></div>
+      <div class="ring2"></div>
+      <div class="ring3"></div>
+      <div class="core"></div>
+      <div class="hud-label hud1">STATUS: ONLINE</div>
+      <div class="hud-label hud2">SYNC: 99.4%</div>
+      <div class="hud-label hud3">NODE: CA-2027</div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-head reveal">
+    <div class="eyebrow">// 01 — Mission Brief</div>
+    <h2>You're Not a Volunteer. You're a Node in the Network.</h2>
+    <p>Every year, Techfest recruits a distributed network of student ambassadors to carry its signal into every corner of the country — and every ambassador upgrades their own skill-set in the process.</p>
+  </div>
+  <div class="about-grid">
+    <div class="about-card reveal">
+      <p>As a Campus Ambassador, you become Techfest's local node — the person who translates a global tech festival into real action on your campus: promoting competitions, driving registrations, and building a community of builders around you.</p>
+      <p>It's part marketing, part leadership training, part networking accelerator. Past CAs have gone on to lead startups, land internships through Techfest's partner network, and build the kind of self-driven initiative that no lecture can teach.</p>
+    </div>
+    <div class="mini-terminal reveal">
+      <div class="l1">$ techfest --scan-candidate</div>
+      <div>&gt; checking requirements<span class="blink"></span></div>
+      <div class="ok">[OK] enrolled at a recognized institute</div>
+      <div class="ok">[OK] willingness to lead & hustle</div>
+      <div class="ok">[OK] active on campus / social circles</div>
+      <div class="warn">[!] prior experience: NOT REQUIRED</div>
+      <div style="margin-top:10px;">&gt; match found — proceed to application</div>
+    </div>
+  </div>
+</section>
+
+<section id="perks">
+  <div class="section-head reveal">
+    <div class="eyebrow">// 02 — Reward Modules</div>
+    <h2>What You Unlock as a CA</h2>
+    <p>Every action you complete feeds your CA score — and every tier of that score unlocks a new reward module.</p>
+  </div>
+  <div class="perks-grid reveal">
+    <div class="perk"><span class="num">MOD.01</span><h3>Certification</h3><p>An official Techfest × IIT Bombay certificate recognizing your contribution — verifiable and resume-ready.</p><span class="glyph">01</span></div>
+    <div class="perk"><span class="num">MOD.02</span><h3>Internship Access</h3><p>Priority access to internship opportunities via Techfest's network of core-team and partner organizations.</p><span class="glyph">02</span></div>
+    <div class="perk"><span class="num">MOD.03</span><h3>Exclusive Merch</h3><p>Limited-edition Techfest CA merchandise, unlocked as you climb the leaderboard.</p><span class="glyph">03</span></div>
+    <div class="perk"><span class="num">MOD.04</span><h3>Direct Mentorship</h3><p>Sessions with the Techfest core team on event management, outreach, and large-scale coordination.</p><span class="glyph">04</span></div>
+    <div class="perk"><span class="num">MOD.05</span><h3>Cash Rewards</h3><p>Top-performing ambassadors earn cash prizes and travel reimbursement for the on-campus fest.</p><span class="glyph">05</span></div>
+    <div class="perk"><span class="num">MOD.06</span><h3>Network Access</h3><p>A direct line into a pan-India network of 1400+ ambassadors, alumni, and tech leaders.</p><span class="glyph">06</span></div>
+    <div class="perk"><span class="num">MOD.07</span><h3>Leadership XP</h3><p>Run your own on-campus outreach team — real ownership, real accountability, real experience.</p><span class="glyph">07</span></div>
+    <div class="perk"><span class="num">MOD.08</span><h3>Early Access</h3><p>First access to Techfest competitions, workshops, and speaker sessions before public rollout.</p><span class="glyph">08</span></div>
+  </div>
+</section>
+
+<section id="path">
+  <div class="section-head reveal">
+    <div class="eyebrow">// 03 — Boot Sequence</div>
+    <h2>Your Path From Signup to Ambassador</h2>
+    <p>A four-step boot sequence — each step must complete before the next initializes.</p>
+  </div>
+  <div class="path reveal">
+    <div class="node">
+      <div class="marker">01</div>
+      <div><h4>Register <span class="tag">DAY 0</span></h4><p>Fill the CA application with your college and contact details. Takes under three minutes — no essays, no gatekeeping.</p></div>
+    </div>
+    <div class="node">
+      <div class="marker">02</div>
+      <div><h4>Onboarding Call <span class="tag">WEEK 1</span></h4><p>Join a live orientation covering your CA dashboard, referral codes, and the outreach toolkit you'll use all season.</p></div>
+    </div>
+    <div class="node">
+      <div class="marker">03</div>
+      <div><h4>Activate Your Campus <span class="tag">WEEK 2–10</span></h4><p>Promote events, drive sign-ups through your unique code, and run at least one on-campus activity of your choice.</p></div>
+    </div>
+    <div class="node">
+      <div class="marker">04</div>
+      <div><h4>Rank Up &amp; Redeem <span class="tag">FINALE</span></h4><p>Your score determines your tier — redeem certificates, merch, cash rewards, and an invite to Techfest at IIT Bombay.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="ranks">
+  <div class="section-head reveal">
+    <div class="eyebrow">// 04 — Rank Tiers</div>
+    <h2>Choose How Far You Push the Signal</h2>
+    <p>All three tiers start on day one — your activity decides which one you land in.</p>
+  </div>
+  <div class="tier-grid reveal">
+    <div class="tier">
+      <div class="tag-top">Tier I</div>
+      <h3>Signal Booster</h3>
+      <ul>
+        <li>Official participation certificate</li>
+        <li>Access to CA community channel</li>
+        <li>Techfest digital badge kit</li>
+      </ul>
+    </div>
+    <div class="tier featured">
+      <div class="tag-top">Tier II · Most Common</div>
+      <h3>Core Node</h3>
+      <ul>
+        <li>Everything in Tier I</li>
+        <li>Exclusive Techfest merchandise</li>
+        <li>Priority internship shortlisting</li>
+        <li>1:1 mentorship slot</li>
+      </ul>
+    </div>
+    <div class="tier">
+      <div class="tag-top">Tier III</div>
+      <h3>Prime Ambassador</h3>
+      <ul>
+        <li>Everything in Tier II</li>
+        <li>Cash reward + travel support</li>
+        <li>On-campus VIP pass to Techfest</li>
+        <li>Direct core-team recognition</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="strip reveal">
+  <div class="stat"><b>50,000+</b><span>Students Reached Yearly</span></div>
+  <div class="stat"><b>16</b><span>Years of Legacy</span></div>
+  <div class="stat"><b>100+</b><span>Events &amp; Competitions</span></div>
+  <div class="stat"><b>₹50L+</b><span>Rewards Distributed to CAs</span></div>
+</div>
+
+<section id="faq">
+  <div class="section-head reveal">
+    <div class="eyebrow">// 05 — FAQ Log</div>
+    <h2>Frequently Decoded Questions</h2>
+  </div>
+  <div class="reveal">
+    <div class="faq-item open">
+      <div class="faq-q">Who can apply to be a Campus Ambassador? <span class="icon">+</span></div>
+      <div class="faq-a"><p>Any currently enrolled college or university student, from any year or discipline. No prior experience is required — just willingness to lead and represent your campus.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is there any cost to join the CA Program? <span class="icon">+</span></div>
+      <div class="faq-a"><p>No. The program is completely free to join — your only investment is time and effort toward outreach on your campus.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How is my performance tracked? <span class="icon">+</span></div>
+      <div class="faq-a"><p>Through a unique referral code and your CA dashboard, which logs registrations, event participation, and outreach activities in real time.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Can I be a CA for multiple years? <span class="icon">+</span></div>
+      <div class="faq-a"><p>Yes — many ambassadors return year after year, climbing tiers and taking on larger leadership roles like Campus Lead.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="eyebrow" style="justify-content:center;">// Final Prompt</div>
+  <h2>Ready to Go Online?</h2>
+  <p>Applications for the current CA cycle are open now. The network is expanding — your campus needs a node.</p>
+  <button class="btn-primary">Apply to Become a CA →</button>
+</section>
+
+<footer>
+  <div>© Techfest, IIT Bombay — CA Program</div>
+  <div><a href="#about">About</a> &nbsp;·&nbsp; <a href="#perks">Perks</a> &nbsp;·&nbsp; <a href="#path">Selection</a> &nbsp;·&nbsp; <a href="#faq">FAQ</a></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
