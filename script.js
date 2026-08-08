@@ -158,6 +158,13 @@ document.querySelectorAll('.faq-item').forEach(item=>{
   });
 });
 
-document.querySelectorAll('.nav-cta,.btn-primary').forEach(b=>{
-  b.addEventListener('click',()=> document.getElementById('faq').scrollIntoView({behavior:'smooth'}));
+const CA_APPLY_URL = 'https://ca.techfest.org/';
+
+document.querySelectorAll('.apply-btn').forEach(b=>{
+  b.addEventListener('click',()=> window.open(CA_APPLY_URL, '_blank', 'noopener'));
 });
+
+const viewProtocolBtn = document.getElementById('viewProtocolBtn');
+if(viewProtocolBtn){
+  viewProtocolBtn.addEventListener('click',()=> document.getElementById('about').scrollIntoView({behavior:'smooth'}));
+}
